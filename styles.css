@@ -6,6 +6,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+.avatar {
+  border-radius: 50%;
+}
+.discord,
+.github-icon {
+  margin-right: -15px;
+}
 .images img {
   width: 120px;
   height: 120px;
@@ -94,8 +101,13 @@ a {
 }
 
 .logo {
+  display: flex;
+  flex-flow: row wrap;
   font-size: 24px;
   color: #f9faf8;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 .quote {
   background-color: #e5e7eb;
@@ -106,7 +118,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 150px;
+  padding: 100px 150px;
   flex-grow: 1;
 }
 .sign {
