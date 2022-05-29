@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -8,8 +7,8 @@ body {
   flex-direction: column;
 }
 .images img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border: #3882f6 3px solid;
   border-radius: 8px;
 }
@@ -20,10 +19,11 @@ body {
 .header {
   background-color: #1f2937;
   color: #f9faf8;
+  padding-top: 32px;
   display: flex;
-  padding: 24px 400px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex: 1;
 }
 .footer {
   background-color: #1f2937;
@@ -32,6 +32,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 a {
   color: #e5e7eb;
@@ -55,24 +56,25 @@ a {
 .hero {
   background-color: #1f2937;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 24px 400px;
-  gap: 50px;
+  padding: 100px 0;
+  flex-grow: 1;
 }
 .left {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 20px;
+  max-width: 350px;
   gap: 20px;
+  padding: 40px;
 }
 .right {
-  flex: 1;
+  width: 350px;
+  padding: 40px;
 }
 .information {
-  padding: 24px 400px;
+  padding: 40px 0;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -88,13 +90,9 @@ a {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 120px;
 }
-.banner {
-  background-color: #3882f6;
-  color: #e5e7eb;
-  padding: 40px 70px;
-}
+
 .logo {
   font-size: 24px;
   color: #f9faf8;
@@ -109,14 +107,17 @@ a {
   align-items: center;
   justify-content: center;
   padding: 40px 150px;
+  flex-grow: 1;
 }
 .sign {
   align-self: flex-end;
+  font-size: 18px;
+  font-weight: 700;
 }
 .banner {
   border-radius: 5px;
   text-align: left;
-  padding: 20px;
+  padding: 30px 80px;
 }
 button.sign-up {
   background-color: #3882f6;
@@ -145,7 +146,29 @@ button.sign-up-two {
   color: #e5e7eb;
 }
 .call-to-action {
-  padding: 50px 150px;
+  padding: 70px 150px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  align-items: center;
+}
+.quote-text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  max-width: 780px;
+  color: #1f2937;
+}
+.whole-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
