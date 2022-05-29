@@ -9,6 +9,9 @@ body {
 .avatar {
   border-radius: 50%;
 }
+.video {
+  border: 2px white solid;
+}
 .discord,
 .github-icon {
   margin-right: -15px;
@@ -16,12 +19,12 @@ body {
 .images img {
   width: 120px;
   height: 120px;
-  border: #3882f6 3px solid;
-  border-radius: 8px;
 }
 .images {
   display: flex;
   gap: 70px;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   background-color: #1f2937;
@@ -72,7 +75,7 @@ a {
 .left {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 400px;
   gap: 20px;
   padding: 40px;
 }
@@ -142,20 +145,23 @@ button.sign-up {
   font-weight: 700;
 }
 button.sign-up-two {
-  background-color: #3882f6;
-  color: #f9faf8;
+  background-color: #f9faf8;
+  color: #1f2937;
   border-radius: 5px;
   padding: 5px;
   width: 75px;
-  border: #f9faf8 2px solid;
+  border: #ce973e 2px solid;
   font-weight: 700;
+}
+.sign-up-two a:visited {
+  color: #1f2937;
 }
 .time {
   font-weight: 700;
 }
 .info {
   font-size: 18px;
-  color: #e5e7eb;
+  color: #1f2937;
 }
 .call-to-action {
   padding: 70px 150px;
@@ -165,8 +171,9 @@ button.sign-up-two {
   justify-content: center;
 }
 .banner {
-  background-color: #3882f6;
-  color: #e5e7eb;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border: 2px #ce973e solid;
   display: flex;
   justify-content: space-around;
   gap: 80px;
